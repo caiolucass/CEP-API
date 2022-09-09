@@ -1,4 +1,4 @@
-package com.wine.cepwine.Rest;
+package com.wine.cepwine.rest;
 
 import com.wine.cepwine.model.dto.CepResponse;
 import org.springframework.beans.factory.annotation.Value;

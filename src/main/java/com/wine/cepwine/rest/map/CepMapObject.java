@@ -1,4 +1,4 @@
-package com.wine.cepwine.Rest.map;
+package com.wine.cepwine.rest.map;
 
 import com.wine.cepwine.model.Cep;
 import com.wine.cepwine.model.dto.CepResponse;
