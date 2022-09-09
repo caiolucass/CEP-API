@@ -12,7 +12,7 @@ import java.util.List;
 public interface CepRepository extends JpaRepository<Cep, Long> {
 
     @Query("SELECT cep FROM Cep cep" +
-            " WHERE cep.faixa_inicio = ?:faixa_inicio AND cep.faixa_fim = :faixa_fim")
+            " WHERE cep.faixa_inicio = :faixa_inicio AND cep.faixa_fim = :faixa_fim")
     List<Cep> findCepByFaixaInicioAndFaixaFim(@Param(value = "faixa_inicio") int faixa_inicio,
                                               @Param(value = "faixa_fim") int faixa_fim);
 

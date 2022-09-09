@@ -4,6 +4,7 @@ import com.wine.cepwine.filter.CepApi;
 import com.wine.cepwine.filter.dto.CepFilter;
 import com.wine.cepwine.model.Cep;
 import com.wine.cepwine.service.CepService;
+import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
