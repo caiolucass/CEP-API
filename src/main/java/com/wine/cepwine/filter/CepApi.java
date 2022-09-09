@@ -22,6 +22,6 @@ public interface CepApi {
     @PostMapping(value = "/cadastrarCep")
     public ResponseEntity<Cep> addCep(@RequestBody @Valid final Cep cep);
 
-    @DeleteMapping(value = "/deletarCep")
-    public void deleteCep(@PathVariable("cep") final long id);
+    @DeleteMapping(value = "/{id}")
+    public void deleteCep(@PathVariable("id") final long id);
 }

@@ -7,9 +7,9 @@ import org.springframework.web.client.RestTemplate;
 
 @Component
 public class CepRestService {
-    @Value("${cep.url}")
+
     private String cep_base_url ;
-    @Value("${cep.type-format}")
+
     private String cep_type_format ;
 
     public CepResponse findCep(String cep){

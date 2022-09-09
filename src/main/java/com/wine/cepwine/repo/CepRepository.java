@@ -7,6 +7,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public interface CepRepository extends JpaRepository<Cep, Long> {
@@ -19,4 +20,7 @@ public interface CepRepository extends JpaRepository<Cep, Long> {
     @Query("SELECT cep FROM Cep cep" +
             " WHERE cep.codigo_loja = :codigo_loja")
     List<Cep> findByCodigoLoja(@Param(value = "codigo_loja") String codigo_loja);
+
+    @Query("SELECT cep FROM Cep cep WHERE cep.faixa_inicio = ?1")
+    Optional<Cep> findCepByFaixaInicio(int faixa_inicio);
 }

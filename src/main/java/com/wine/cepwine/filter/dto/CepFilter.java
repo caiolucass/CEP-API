@@ -12,9 +12,7 @@ public class CepFilter {
 
     @NotNull
     private String codigo_loja;
-
     private int faixa_inicio;
-
     private int faixa_fim;
 
 

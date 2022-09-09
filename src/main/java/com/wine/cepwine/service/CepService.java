@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
+
 @Slf4j
 @Service
 public class CepService {
@@ -26,7 +28,12 @@ public class CepService {
     }
 
     public Cep saveCep(Cep cep) {
-        log.info("Salvando novo CEP {} no banco de dados.", cep.getCodigo_loja());
+        log.info("Salvando novo CEP {} no banco de dados.", cep.getFaixa_inicio());
+        Optional<Cep> cepList = cepRepository.findCepByFaixaInicio(cep.getFaixa_inicio());
+
+        if(cepList.isPresent()){
+            throw new IllegalStateException("Faixa de CEP ja cadastrada!");
+        }
         return cepRepository.save(cep);
     }
 
