@@ -14,7 +14,7 @@ Um teste aplicado pela startup Wine, afim de que fosse desenvolvido uma API de C
 
 > DELETE: http://localhost:8080/api/cep/{id} -> Delela uma faixa de CEP. Necessario informar o id do CEP desejado!
 
-> GET: http://localhost:8080/api/cep/{ID} -> Retorna uma lista de faixas de CEP cdastradas. Necessario informar o id do CEP desejado!
+> GET: http://localhost:8080/api/cep/{id} -> Retorna uma lista de faixas de CEP cdastradas. Necessario informar o id do CEP desejado!
 
 > GET: http://localhost:8080/api/cep/ceps -> Retorna uma faixa de CEP.
 
