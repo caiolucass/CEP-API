@@ -4,7 +4,7 @@ Um teste aplicado pela startup Wine, afim de que fosse desenvolvido uma API de C
 
 ### Ferramentas utilizdas
 
-> Spring Boot + JPA + MySql que não apenas consulta CEPs e endereços mas cadastra e exclui.
+> Spring Boot + JPA + MySql que não apenas consulta CEPs mas cadastra e exclui.
 
 É necessário ter o banco MySql instalado bem como a senha definida como "Ca@604365" (sem aspas) para o usuário "root", o usuário da conexão.
 
