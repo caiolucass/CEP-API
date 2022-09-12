@@ -8,7 +8,7 @@ Um teste aplicado pela startup Wine, afim de que fosse desenvolvido uma API de C
 
 É necessário ter o banco MySql instalado bem como a senha definida como "Ca@604365" (sem aspas) para o usuário "root", o usuário da conexão.
 
-### Instruções  trucoes para o Uso da API
+### Instruções para o uso da API
 
 > POST: http://localhost:8080/api/cep/cadastrarCep -> Cadastra nova Faixa de CEP
 
