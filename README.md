@@ -18,6 +18,6 @@ Um teste aplicado pela startup Wine, afim de que fosse desenvolvido uma API de C
 
 > GET: http://localhost:8080/api/cep/ceps -> Retorna uma lista de faixas de CEP cdastradas.
 
-#Observação
+# Observação
 
 Todas as requisicoes podem ser testadas via Postman (https://www.postman.com/)
